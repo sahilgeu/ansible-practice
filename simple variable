@@ -1,0 +1,11 @@
+--- 
+- name: to use simple variable using debug module
+  hosts: all
+  vars:
+    name: "sahil"
+    vesion: "5.0"
+  tasks:
+    - name: print value using debug
+      debug:
+        msg: "my name is {{ name }} and my age is {{ version }}" 
+        
