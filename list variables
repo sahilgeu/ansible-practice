@@ -1,0 +1,12 @@
+--- 
+
+- name: to use a list variaable
+  hosts: all
+  vars:
+    - item1
+    - item2
+    - item3
+  tasks:
+    - name: print value
+      debug: 
+        msg: "hi my {{ vars }} "
